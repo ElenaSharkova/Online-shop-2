@@ -4,4 +4,96 @@
 @import 'libs';
 @import 'global';
 
+.header{
+    background-image: url(../images/slider-1-img.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__inner{
+        padding-top: 37px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 291px;
+    }
+}
 
+.menu{
+    &__list{
+        display: flex;
+        
+    }
+    &__item{
+        padding-left: 28px;
+        color: $default;
+        @extend %title-font;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+    }
+    &__link-search{
+        padding-right: 23px; //резервируем место под значок
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            left: 0;
+            width: 23px;
+            height: 23px;
+            background-image: url(../images/header-search.svg);
+            margin-left: 95px;
+        }
+    }
+    
+}
+
+.top{
+    &__slider-subtitle{
+        @extend %title-font;
+        color: #43a047;
+        font-size: 18px;
+        line-height: 48px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        padding-bottom: 24px;
+    }
+    &__slider-title{
+        @extend %title-font;
+        font-size: 62px;
+        line-height: 72px;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: $title;
+        margin-bottom: 35px;
+    }
+    &__slider-text{
+        max-width: 460px;
+        margin-bottom: 36px;
+        @extend %text-font;
+        font-size: 14px;
+        line-height: 24px;
+        color: $default;
+    }
+    &__slider-button{
+        background-color: #ffffff;
+        border: none;
+        width: 212px;
+        height: 45px;
+        box-shadow: 0px 2px 5px 0px rgba(33,33,33,0.34);
+        border-radius: 22.5px;
+        cursor: pointer;
+        @extend %title-font;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: $title;
+        padding-right: 12px;
+        
+    }
+    &__slider-button:hover{
+        background: #ffffff url('../images/arrow.png') no-repeat 181px 16px;
+        outline: 0;
+    }
+}
