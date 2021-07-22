@@ -106,3 +106,112 @@
 .subtitle-exclusive{
     color: #1e88e5;
 }
+
+.footer{
+    padding-top: 117px;
+    &__botton{
+        padding-bottom: 30px;
+        padding-top: 75px;
+    }
+    &__botton-inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__copyright,
+    &__conditions{
+        @extend %title-font;
+        color: $default;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        font-size: 12px;
+        line-height: 26px;
+    }
+    &__social{
+        display: flex;
+    }
+    &__icon{
+        padding-left: 7px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__contact-title,
+    &__information-title,
+    &__communication-title{
+        padding-bottom: 25px;
+        font-size: 18px;
+        line-height: 24px;
+        @extend %title-font;
+        color: $default;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    &__contact-text{
+        padding-bottom: 34px;
+        @extend %text-font;
+        color: $title;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &__information-text{
+        padding-bottom: 17px;
+        @extend %title-font;
+        color: $title;
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding-right: 105px;
+    }
+    &__communication-text{
+        font-size: 14px;
+        line-height: 22px;
+        @extend %text-font;
+        color: $title;
+        padding-bottom: 28px;
+    }
+    &__form-input{
+        padding: 18px 128px 18px 5px;
+        background-color: transparent;
+        height: 48px;
+        border: 1px solid #d9dee1;
+        &::placeholder{ /*всегда нужно особое приглашение в плане стилей*/
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            line-height: 22px;
+            color: #6c6c6c;
+        }
+        &__form-button{
+            background-color: transparent;
+            border: none;
+            color: #fffff0;
+            padding: 5px 12px;
+            cursor: pointer;
+            width: 160px;
+            height: 47px;
+        }
+    }
+}
+.information-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
