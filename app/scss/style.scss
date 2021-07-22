@@ -13,7 +13,7 @@
         padding-top: 37px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 291px;
+        margin-bottom: 251px;
     }
 }
 
@@ -51,7 +51,6 @@
 .top{
     &__slider-subtitle{
         @extend %title-font;
-        color: #43a047;
         font-size: 18px;
         line-height: 48px;
         text-transform: uppercase;
@@ -90,10 +89,20 @@
         letter-spacing: 0.2em;
         color: $title;
         padding-right: 12px;
+        margin-bottom: 10px;
         
     }
     &__slider-button:hover{
         background: #ffffff url('../images/arrow.png') no-repeat 181px 16px;
         outline: 0;
     }
+}
+.subtitle-trending{
+    color: #43a047;
+}
+.subtitle-sale{
+    color: red;
+}
+.subtitle-exclusive{
+    color: #1e88e5;
 }
