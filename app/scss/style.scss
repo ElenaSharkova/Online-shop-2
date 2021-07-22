@@ -172,10 +172,11 @@
         padding-bottom: 28px;
     }
     &__form-input{
-        padding: 18px 128px 18px 5px;
+        padding: 0 31px;
         background-color: transparent;
         height: 48px;
         border: 1px solid #d9dee1;
+        width: 335px;
         &::placeholder{ /*всегда нужно особое приглашение в плане стилей*/
             font-weight: 300;
             font-family: 'Montserrat', sans-serif;
@@ -183,16 +184,24 @@
             line-height: 22px;
             color: #6c6c6c;
         }
-        &__form-button{
-            background-color: transparent;
-            border: none;
-            color: #fffff0;
-            padding: 5px 12px;
-            cursor: pointer;
-            width: 160px;
-            height: 47px;
-        }
     }
+    &__form-button{
+        background-color: transparent;
+        border: 1px solid #d9dee1;
+        color: #6c6c6c;
+        height: 48px;
+        font-weight: 600;
+        padding: 6px 12px;
+        width: 60px;
+        margin-left: -5px;
+        cursor: pointer;
+        text-align: center;
+        
+    }
+        &__form-icon{
+            margin: 5px 12px;
+        }
+    
 }
 .information-content{
     display: flex;
