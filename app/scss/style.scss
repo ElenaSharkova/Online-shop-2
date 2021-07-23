@@ -145,7 +145,7 @@
         }
     }
     &__text:hover{
-            opacity: .7;
+            opacity: .85;
         }
 }
 
@@ -246,6 +246,58 @@
         padding-bottom: 35px;
     }
 }
+
+.trend-product{
+    margin-top: 120px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        @extend %title-font;
+        color: $title;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    &__link{
+        @extend %title-font;
+        color: $title;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        padding-right: 20px;
+        display: inline-block;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/arrow.png');
+            left: 180px;
+            width: 12px;
+            height: 12px;
+            top: 7px;
+            position: absolute;
+            background-repeat: no-repeat;
+        }
+    }
+    &__text:hover{
+            opacity: .85;
+        }
+    &__gallery{
+        margin-top: 66px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    &__img{
+        height: 370px;
+        width: 370px;
+        object-fit: cover; /*сохранить пропорции картинки*/
+    }
+    
+}
+
 .content{
     &__slider{
     margin-top: 120px;
@@ -323,6 +375,21 @@
     }
     
 }
+
+.exclusive-product{
+    margin-top: 120px;
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+
 .mobilleapp{
     background-image: url(../images/mobile-app.jpg);
     background-repeat: no-repeat;
