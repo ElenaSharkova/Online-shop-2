@@ -106,6 +106,50 @@
 .subtitle-exclusive{
     color: #1e88e5;
 }
+.exclusive{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        margin-top: 122px;
+    }
+    &__first,
+    &__second{
+        background-image: url(../images/content/exclusive-first.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+        padding: 226px 7px 255px 9px
+    }
+    &__second{
+        background-image: url(../images/content/exclusive-second.jpg);
+    }
+    &__first-subtitle{
+        padding-bottom: 18px;
+        @extend %title-font;
+        color: #1e88e5;
+        font-size: 18px;
+        line-height: 48px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    &__first-title{
+        @extend %title-font;
+        color: $title;
+        font-size: 36px;
+        line-height: 1.2;
+        padding-bottom: 23px;
+    }
+    &__first-text{
+        @extend %text-font;
+        color: $default;
+        font-size: 14.1px;
+        line-height: 24px;
+        max-width: 376px;
+        padding-bottom: 35px;
+    }
+}
 .content{
     &__slider{
     margin-top: 120px;
