@@ -106,6 +106,102 @@
 .subtitle-exclusive{
     color: #1e88e5;
 }
+
+.new-collection{
+    padding-top: 70px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__top{
+        margin-bottom: 52px;
+    }
+    &__title{
+        @extend %title-font;
+        color: $title;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    &__link{
+        @extend %title-font;
+        color: $title;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        padding-right: 20px;
+        display: inline-block;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../images/arrow.png');
+            left: 180px;
+            width: 12px;
+            height: 12px;
+            top: 7px;
+            position: absolute;
+            background-repeat: no-repeat;
+        }
+    }
+    &__text:hover{
+            opacity: .7;
+        }
+}
+
+.collection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    &__item{
+        position: relative;
+        &:hover{
+            .collection__info{
+                opacity: 1;
+            }
+            
+        }
+    }
+    &__img{
+        min-height: 270px;
+        min-width: 270px;
+        object-fit: cover; //если вставить большую картинку, то она сделается автоматически до нужных размеров
+    }
+    &__info{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(#fff, .7);
+        padding: 10px;// чтобы никто не прислонился к стенкам картинки
+        display: flex; //встали горизонтально
+        flex-direction: column; //обратно встали вертикально друг под другом
+        align-items: center; //контент встал горизонтально по центру
+        justify-content: center; //контент встал вертикально по центру
+        opacity: 0; //блок исчез
+        transition: all .5s;
+    }
+    &__info-icon{
+        margin-bottom: 17px;
+    }
+    &__info-title{
+        margin-bottom: 21px;
+        @extend %title-font;
+        color: $title;
+        font-size: 22px;
+        line-height: 29px;
+    }
+    &__info-text{
+        @extend %text-font;
+        color: $default;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+  
+
 .exclusive{
     &__inner{
         display: flex;
