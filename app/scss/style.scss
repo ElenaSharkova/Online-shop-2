@@ -388,6 +388,61 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
     }
+    &__contents{
+        background-image: url(../images/content/exclusive_gallary_1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-height: 570px;
+        max-width: 570px;
+        padding-top: 180px;
+        padding-left: 30px;
+    }
+    &__subtitle{
+        padding-bottom: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #1e88e5;
+        @extend %title-font;
+        font-size: 18px;
+        line-height: 48px;
+    }
+    &__title{
+        font-size: 36px;
+        line-height: 1.2;
+        @extend %title-font;
+        color: $title;
+        padding-bottom: 26px;
+    }
+    &__text{
+        padding-bottom: 36px;
+        font-size: 14.1px;
+        line-height: 24px;
+        @extend %text-font;
+        color: $default;
+        max-width: 335px;
+    }
+    &__btn{
+        background-color: #ffffff;
+        border: none;
+        width: 212px;
+        height: 45px;
+        box-shadow: 0px 2px 5px 0px rgba(33,33,33,0.34);
+        border-radius: 22.5px;
+        cursor: pointer;
+        @extend %title-font;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: $title;
+        padding-right: 12px;
+        margin-bottom: 10px;
+    }
+    &__btn:hover{
+        background: #ffffff url('../images/arrow.png') no-repeat 181px 16px;
+        outline: 0;
+    }
 }
 
 .mobilleapp{
