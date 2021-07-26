@@ -644,11 +644,20 @@
         line-height: 48px;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        color: #e53935;
         @extend %title-font;
         text-align: center;
         padding-bottom: 30px;
     }
+    &__subtitle-hotdeal{
+        color: #e53935;
+    }
+    &__subtitle-exclusive{
+        color: #1e88e5;
+    }
+    &__subtitle-trending{
+        color: #43a047;
+    }
+    
     &__price{
         text-align: center;
         line-height: 48px;
