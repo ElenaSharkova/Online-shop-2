@@ -34,8 +34,13 @@
     &__link:hover{
         color: $title;
     }
+    &__link--active{
+        color: $title;
+        padding-bottom: 2px; /*Отступ линии от текста вниз на 5px*/
+        border-bottom: 2px solid #303030; /*Толщина линии, линия сплошная, цвет линии*/
+    }
+    
     &__link-search{
-        padding-right: 23px; //резервируем место под значок
         position: relative;
         &::before{
             content: '';
