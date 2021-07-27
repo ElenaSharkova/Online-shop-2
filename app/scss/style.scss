@@ -31,6 +31,9 @@
         letter-spacing: 0.1em;
         font-weight: 600;
     }
+    &__link:hover{
+        color: $title;
+    }
     &__link-search{
         padding-right: 23px; //резервируем место под значок
         position: relative;
