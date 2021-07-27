@@ -30,5 +30,13 @@ $(function () {
 		return false;
 	});
     
+    $('.menu-tabs__item').on('click', function (e){
+        e.preventDefault(); //ссылки отменяют себе переход на другую страницу
+        $('.menu-tabs__item').removeClass('menu-tabs__item--active');
+        $(this).addClass('menu-tabs__item--active');
+        $('.menu-tabs__content').removeClass('menu-tabs__content--active'); //убрали вообще весь контент из любого таба
+        $($(this).attr('href')).addClass('menu-tabs__content--active');
+    });
+    
     
 })
