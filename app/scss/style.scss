@@ -608,6 +608,7 @@
         justify-content: space-between;
         background-color: #f4f4f4;
         padding: 26px 400px;
+        margin-bottom: 170px;
     }
     &__item{
         font-size: 18px;
@@ -620,6 +621,16 @@
     }
     &__item:hover{
         color: $title;
+    }
+    &__item--active{
+        color: $title;
+    }
+    &__content{
+        display: none;// скрыть конктент
+        margin-bottom: 250px;
+    }
+    &__content--active{
+        display: block;// открыть контент
     }
 }
 
