@@ -843,7 +843,75 @@
     }
 }
 
-
+//CONTACTS
+.map{
+    margin-bottom: 60px;
+}
+.contacts{
+    &__title{
+        @extend %title-font;
+        color: $title;
+        font-size: 62px;
+        line-height: 72px;
+        font-weight: 100;
+        margin-top: 170px;
+    }
+    &__information{
+        margin-bottom: 123px;
+    }
+    &__inner{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    &__item{
+        background-image: url(../images/contacts-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 370px;
+        height: 370px;
+        
+        
+    }
+    &__icon{
+        margin: 0 auto;
+        padding: 47px 0 25px;
+        
+    }
+    &__city{
+        @extend %title-font;
+        color: $title;
+        font-size: 22px;
+        line-height: 29px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &__partition{
+        margin-bottom: 10px;
+    }
+    &__subtitle,
+    &__address,
+    &__info{
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        @extend %title-font;
+    }
+    &__subtitle{
+        color: $default;
+        margin-bottom: 4px;
+    }
+    &__info{
+        color: $title;
+    }
+    &__address{
+        font-weight: 300;
+        color: $default;
+    }
+}
 
 
 
